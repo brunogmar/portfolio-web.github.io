@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300&display=swap');
+
+html {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html,
+  body {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 0px; 
+  }
+
+  .profile {
+      display: flex;
+      justify-content: space-between;
+      height: auto;
+      width: 98%;
+      margin: 10px auto;
+      border: 1px solid black;
+      padding: 5px 0 0 auto;
+      border-radius: 25px;
+      background: rgba(0, 0, 0, 0.5) url(./assets/background2.jpeg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-blend-mode: darken;
+      /* background-position-y: -400px; */
+  }
+
+h1,h2,p ,span {
+    font-family: 'Mulish', sans-serif;
+}
+
+h1{
+    font-weight: 800;
+}
+h2{
+    font-weight: 600;
+}
+p, span{
+    font-weight: 400;
+}
+
+.profile_container {
+    padding-top: 200px;
+    padding-bottom: 30px;
+}
+
+.profile_container_logo {
+    padding-top: 340px;
+    margin-right: 50px;
+    width: 250px;
+    height: 250px;
+}
+
+.profile_container_logo img {
+    box-shadow: 0px 0px 15px black;
+}
+
+.profile_data {
+    margin-left: 50px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.profile_data_text {
+    color: white;
+    padding-top: 0px;
+    text-shadow: 0px 0px 15px black;
+}
+
+.profile_img_profile {
+    width: 200px;
+    height: auto;
+    border-radius: 100px;
+    box-shadow: 0px 0px 15px black;
+}
+
+.btn_profile {
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.profile_data button {
+    box-shadow: 0px 0px 7px black;
+}
+
+.item_buttons {
+    text-align: end;
+}
+
+.about {
+     display: flex;
+     justify-content: space-between;
+     height: auto;
+     width: 98%;
+     margin: 10px auto;
+     border: 1px solid black;
+     padding: 15px 15px 15px 50px;
+     border-radius: 25px;
+}
+
+.section_title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 15px;   
+}
+
+.section_title h2 {
+    font-weight: 600;
+}
+
+.icon_img {
+    height: 20px;
+    width: auto;
+    margin-right: 10px;
+}
+
+.experience_education {
+    /* display: flex;
+    justify-content: space-between; */
+    height: auto;
+    width: 98%;
+    margin: 10px auto;
+    border: 1px solid black;
+    padding: 15px 15px 15px 50px;
+    border-radius: 25px;
+}
+
+.item_card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.item_details {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.item_details h2 {
+    padding-left: 15px;
+}
+
+.item_details p {
+    padding-left: 15px;
+}
+
+.item_img img {
+    height: 150px;
+    width: auto;
+    text-align: center;
+    border-radius: 20px;
+    margin-right: 25px;
+}
+
+.experience_skill {
+    /*display: flex;
+    justify-content: space-between;*/
+    height: auto;
+    width: 98%;
+    margin: 10px auto;
+    border: 1px solid black;
+    padding: 15px 15px 15px 50px;
+    border-radius: 25px;
+}
+
+.skill {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 0px;
+    padding-top: 15px;
+}
+
+.progress {
+    max-width: 60%;
+    margin: 0 auto 20px;
+}
+
+.experience_project {
+    /*display: flex;
+    justify-content: space-between;*/
+    height: auto;
+    width: 98%;
+    margin: 10px auto;
+    border: 1px solid black;
+    padding: 15px 15px 15px 50px;
+    border-radius: 25px;
+}
+
+.project_card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 50px;
+    padding-top: 15px;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+}

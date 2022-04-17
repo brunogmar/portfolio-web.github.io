@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <!-- Hola de estilos en CSS -->
+    <link rel="stylesheet" href="./style.css">
+
+    <title>Bienvenido | Bruno Marchetti</title>
+</head>
+<body>
+
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark" aria-label="Tenth navbar example">
+        <div class="container-fluid">
+          <div>
+            <a class="navbar-brand text-light" href="#">Bruno Marchetti</a>
+          </div>
+          <div class="collapse navbar-collapse justify-content-md-end id="navbarsExample08">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#">GitHub</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contacto</a>
+              </li>
+              <li>
+                <button type="button" class="btn btn-outline-secondary" onclick="login()">Login</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+
+      <section class="profile">
+        <div class="profile_container">
+          <div class="profile_data">
+            <img src="./assets/profile.jpg" alt="Foto de perfil" class="profile_img_profile">
+            <div class="profile_data_text">
+              <h1>Bruno Marchetti</h1>
+              <h2>Fullstack dev jr.</h2>
+              <p>Buenos Aires, Argentina</p>
+            </div>
+          </div>
+          <div class="profile_data">
+            <button class="btn btn-outline-info bg-dark text-white btn-profile" onclick="interest()">Tengo interes en</button>
+            <button class="btn btn-outline-info bg-dark text-white btn-profile" onclick="addSection()">Añadir sección</button>
+            <button class="btn btn-outline-info bg-dark text-white btn-profile" onclick="more()">Mas</button>
+          </div>
+        </div>
+        <div class="profile_container_logo">
+          <img src="./assets/APlogo.png" alt="Logo Argentina Programa" class="img_fluid">
+        </div>
+      </section>
+
+      <section class="about">
+        <div>
+          <div  class="section_title">
+            <h2>Acerca de mi</h2>
+          </div>
+          <div class="about_description">
+            <p>Fullstack dev jr - Realizador audiovisual - Técnico en música - Técnico electromecánico</p>
+          </div>
+        </div>
+        <div class="about_icon">
+          <button class="btn bg-light-50" onclick="editAbout()"><img src="./assets/edit-icon.svg" alt="edit-pen" class="icon_img"></button>
+        </div>
+      </section>
+
+      <section class="experience_education">
+        <div class="section_title"> <!--Titulo de la sección "Expeciencia"-->
+          <h2>Experiencia</h2>
+          <button class="btn bg-light-50" onclick="editAbout()"><img src="./assets/add-icon.svg" alt="add-icon" class="icon_img"></button>
+        </div>
+
+        <div class="item_card"> <!--Item de experiencia "Frontend developer"-->
+          <div class="item_details">
+            <div class="item_img">
+              <img src="./assets/background.jpg" alt="Programando">
+            </div>
+             <div>
+              <h2>Frontend Developer</h2>
+              <p>Pixar - Jornada parcial</p>
+              <p>mar 2019 - Actualidad - 2 años y 6 meses</p>
+              <p>Buenos Aires, Argentina</p> 
+           </div>
+          </div>
+          <div class="item_buttons">
+            <button class="btn bg-light-50" onclick="editAbout()"><img src="./assets/edit-icon.svg" alt="edit-pen" class="icon_img"></button>
+            <button class="btn bg-light-50" onclick="editAbout()"><img src="./assets/delete-icon.svg" alt="delete-icon" class="icon_img"></button>
+          </div>
+        </div>
+
+        <div class="section_title"> <!--Titulo de la sección "Educación"-->
+          <h2>Educación</h2>
+          <button class="btn bg-light-50" onclick="editAbout()"><img src="./assets/add-icon.svg" alt="add-icon" class="icon_img"></button>
+        </div>
+
+        <div class="item_card"> <!--Item de educación "Conservatorio de música"-->
+          <div class="item_details">
+            <div class="item_img">
+              <img src="./assets/consFallaLogo2.jpg" alt="Conservatorio Manuel de Falla logo">
+            </div>
+            <div>
+              <h2>Conservatorio Superior de Música<br>"Manuel De Falla"</h2>
+              <p>Técnico en música</p>
+              <p>2018 - 2022</p>
+            </div>
+          </div>
+          <div class="item_buttons">
+            <button class="btn bg-light-50" onclick="editAbout()"><img src="./assets/edit-icon.svg" alt="edit-pen" class="icon_img"></button>
+            <button class="btn bg-light-50" onclick="editAbout()"><img src="./assets/delete-icon.svg" alt="delete-icon" class="icon_img"></button>
+          </div>
+        </div>
+
+        <div class="item_card"> <!--Item de educación "Universidad de Tres de Febrero"-->
+          <div class="item_details">
+            <div class="item_img">
+              <img src="./assets/untrefLogo2.png" alt="Untref logo">
+            </div>
+            <div>
+              <h2>Universidad Nacional<br>de Tres de Febrero</h2>
+              <p>Realizador audiovisual</p>
+              <p>2011 - 2016</p>
+            </div>
+          </div>
+          <div class="item_buttons">
+            <button class="btn bg-light-50" onclick="editAbout()"><img src="./assets/edit-icon.svg" alt="edit-pen" class="icon_img"></button>
+            <button class="btn bg-light-50" onclick="editAbout()"><img src="./assets/delete-icon.svg" alt="delete-icon" class="icon_img"></button>
+          </div>
+        </div>
+
+        <div class="item_card"> <!--Item de educación "Colegio secundario técnico"-->
+          <div class="item_details">
+            <div class="item_img">
+              <img src="./assets/alemaniaLogo2.jpg" alt="Alemania logo">
+            </div>
+            <div>
+              <h2>EET N°2 "Alemania"</h2>
+              <p>Técnico en equipos e instalaciones electromecánicas</p>
+              <p>2004 - 2010</p>
+            </div>
+          </div>
+          <div class="item_buttons">
+            <button class="btn bg-light-50" onclick="editAbout()"><img src="./assets/edit-icon.svg" alt="edit-pen" class="icon_img"></button>
+            <button class="btn bg-light-50" onclick="editAbout()"><img src="./assets/delete-icon.svg" alt="delete-icon" class="icon_img"></button>
+          </div>
+        </div>
+
+      </section>
+
+      <section class="experience_skill">
+        <div  class="section_title">
+          <h2>Hard & soft skills</h2>
+          <button class="btn bg-light-50" onclick="editAbout()"><img src="./assets/add-icon.svg" alt="add-icon" class="icon_img"></button>
+        </div>
+
+        <div class="skill">
+          <div></div>
+          <div class="skil_align">
+            <p>Resolución de problemas</p>
+          </div>
+          <div class="item_buttons">
+            <button class="btn bg-light-50" onclick="editAbout()"><img src="./assets/edit-icon.svg" alt="edit-pen" class="icon_img"></button>
+            <button class="btn bg-light-50" onclick="editAbout()"><img src="./assets/delete-icon.svg" alt="delete-icon" class="icon_img"></button>
+          </div>
+        </div>
+        <div class="progress">
+          <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
+        </div>
+
+        <div class="skill">
+          <div></div>
+          <div class="skil_align">
+            <p>Diseño de sistemas</p>
+          </div>
+          <div class="item_buttons">
+            <button class="btn bg-light-50" onclick="editAbout()"><img src="./assets/edit-icon.svg" alt="edit-pen" class="icon_img"></button>
+            <button class="btn bg-light-50" onclick="editAbout()"><img src="./assets/delete-icon.svg" alt="delete-icon" class="icon_img"></button>
+          </div>
+        </div>
+
+        <div class="progress">
+          <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 40%"></div>
+        </div>
+      </section>
+
+      <section class="experience_project">
+        <div class="section_title">
+          <h2>Proyectos</h2>
+          <button class="btn bg-light-50" onclick="editAbout()"><img src="./assets/add-icon.svg" alt="add-icon" class="icon_img"></button>
+        </div>
+
+        <div class="project_card">
+          <div class="project_details">
+            <div>
+              <h2 class="text-info">e-Farmacia</h2>
+              <p>App de compra y envío de medicamentos y articulos de farmacia.</p>
+            </div>
+          </div>
+          <div class="item_buttons">
+            <button class="btn bg-light-50" onclick="editAbout()"><img src="./assets/edit-icon.svg" alt="edit-pen" class="icon_img"></button>
+            <button class="btn bg-light-50" onclick="editAbout()"><img src="./assets/delete-icon.svg" alt="delete-icon" class="icon_img"></button>
+          </div>
+        </div>
+
+        <div class="project_card">
+          <div class="project_details">
+            <div>
+              <h2 class="text-info">Sistema de monitoreo</h2>
+              <p>Sistema de monitoreo automático de stock de mercadería para importante empresa multinacional.</p>
+            </div>
+          </div>
+          <div class="item_buttons">
+            <button class="btn bg-light-50" onclick="editAbout()"><img src="./assets/edit-icon.svg" alt="edit-pen" class="icon_img"></button>
+            <button class="btn bg-light-50" onclick="editAbout()"><img src="./assets/delete-icon.svg" alt="delete-icon" class="icon_img"></button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Bruno Marchetti&copy; 2020–2022 Company, Inc. &middot; <a href="#" class="text-info">Privacy</a> &middot; <a href="#" class="text-info">Terms</a></p>
+    </footer>
+</body>
+</html>
+
